@@ -1,7 +1,6 @@
 import "./globals.css";
 
 import { Metadata } from "next";
-import { ErrorWrapper } from "./error-wrapper";
 
 export const metadata: Metadata = {
   title: {
@@ -25,9 +24,7 @@ export default function RootLayout({
         </header>
 
         {/* Main content */}
-        <main className="flex-grow">
-          <ErrorWrapper>{children}</ErrorWrapper>
-        </main>
+        <main className="flex-grow">{children}</main>
 
         {/* Footer */}
         <footer className="bg-gray-800 text-white text-center py-4 mt-auto">
